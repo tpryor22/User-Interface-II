@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 * {
     box-sizing:border-box;
-	border: 1px solid red;
+	/* border: 1px solid black; */
 	max-width: 100%;
     }
 
@@ -56,23 +56,41 @@ header {
 	
 }
 
+header h1 {
+	width: 25%;
+	text-align:left;
+	padding: 21px;
+}
+
+header nav {
+	width: 30%;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 22px;
+	padding: 12px;
+	
+
+}
+
+nav a {
+	border:3px solid blue;
+	width: auto;
+}
 h1 {
     color: teal;
 	font-size: 40px;
 }
 
-nav  {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	width:22%;
-}
+
 
 .first {
 	display: flex;
 	justify-content: space-around;
-	
-	
+}
+
+.first .left {
+	border: 3px solid black;
+	margin: 2%;
 }
 
 /* .first img {
@@ -83,13 +101,72 @@ nav  {
 	width: 40%;
 }
 
-/* .right {
-	width:75%;
+.right {
+	margin: 35px;
+	padding: 25px;
+}
+
+.right h2  {
+	width: 75%;
+	margin: 35px;
+	text-align: center;
+}
+
+.right button {
+	width: 76%;
+	margin: 35px;
+	font-weight: bold;
+}
+
+.right p {
+	width: 76%;
+	margin: 35px;
+	text-align: center;
+}
+
+/* .second {
+	width: 75%;
+	display: flex;
+	justify-content: space-evenly;
 } */
+
+.photo {
+	text-align: center;
+	font-weight: bold;
+}
 
 .second, .third {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	/* border: 2px solid red; */
+}
+
+footer{
+	background-color: darkgoldenrod;
+	padding: 21px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+footer h3 {
+	text-align: center;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+}
+
+footer button {
+	text-align: center;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+	
+
 }
 
 @media(max-width:800px) {
